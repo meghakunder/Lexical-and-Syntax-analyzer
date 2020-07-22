@@ -1,14 +1,25 @@
 # Lexical-and-Syntax-analyzer
+
 #Design a lexical and LR parser for the following code
+
 int main()
+
 begin
+
      int count=1;
+     
      while(n>1) 
+     
      begin    
+     
           count=count+1;
+          
           n=n/2;
+          
      end while 
+     
      return count;
+     
 end 
 
 #The LR1 grammar is :
@@ -116,7 +127,7 @@ o->condition
 
 p->return
 
-#New grammar:
+<b>New grammar:</b>
 
 S' -> S
 S -> a A
@@ -141,5 +152,6 @@ G -> n f j o K g L
 L -> c b c C d n c
 H -> p K
 
-#String to be parsed
+<b>String to be parsed:</b>
+
 a e f g c b c a j k l h c n f j o l g c b c j k j m l h c j k j m l h c d n c p j h c d c
