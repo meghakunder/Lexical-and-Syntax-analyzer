@@ -1,6 +1,6 @@
 # Lexical-and-Syntax-analyzer
 
-#Design a lexical and LR parser for the following code
+<b>Design a lexical and LR parser for the following code</b>
 
 int main()
 
@@ -22,7 +22,7 @@ begin
      
 end 
 
-#The LR1 grammar is :
+<b>The LR1 grammar is :</b>
 
 S'->S
 
@@ -130,26 +130,47 @@ p->return
 <b>New grammar:</b>
 
 S' -> S
+
 S -> a A
+
 A -> B b c C d c
+
 B -> e f g c
+
 C -> D C
+
 C -> D
+
 D -> E h c
+
 D -> F h c
+
 D -> G
+
 D -> H h c
+
 E -> a I
+
 I -> J
+
 I -> J i I
+
 J -> j
+
 J -> j k l
+
 F -> j k K
+
 F -> j k K m K
+
 K -> j
+
 K -> l
+
 G -> n f j o K g L
+
 L -> c b c C d n c
+
 H -> p K
 
 <b>String to be parsed:</b>
